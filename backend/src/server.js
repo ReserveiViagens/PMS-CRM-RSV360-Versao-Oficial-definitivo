@@ -19,6 +19,7 @@ const { createWebSocketServer } = require("./websocket/server");
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/users");
 const customerRoutes = require("./routes/customers");
+const campaignsRoutes = require("./routes/campaigns");
 const travelPackageRoutes = require("./routes/travel-packages");
 const bookingRoutes = require("./routes/bookings");
 const paymentRoutes = require("./routes/payments");
@@ -277,6 +278,7 @@ const checkAndUseRoute = (path, route, needsAuth = false) => {
 checkAndUseRoute("/api/auth", authRoutes, false);
 checkAndUseRoute("/api/users", userRoutes, true);
 checkAndUseRoute("/api/customers", customerRoutes, true);
+checkAndUseRoute("/api/campaigns", campaignsRoutes, true);
 checkAndUseRoute("/api/travel-packages", travelPackageRoutes, true);
 checkAndUseRoute("/api/bookings", bookingRoutes, true);
 checkAndUseRoute("/api/payments", paymentRoutes, true);
