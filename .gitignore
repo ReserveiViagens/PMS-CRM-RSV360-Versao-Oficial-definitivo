@@ -1,4 +1,6 @@
-﻿# Dependencies
+# IMPORTANTE: manter este arquivo em UTF-8 sem BOM.
+
+# Dependencies
 node_modules/
 package-lock.json
 yarn.lock
@@ -9,6 +11,7 @@ dist/
 build/
 .next/
 **/.next/
+**/.next/**
 out/
 coverage/
 
